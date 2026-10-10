@@ -13,9 +13,8 @@ finding out when its answers can be trusted.
 ## Why this exists
 
 An LLM can produce a correct, tested implementation of this method in minutes.
-That is worth knowing, and it could be discouraging to someone learning to
-program. This repository is an argument that it need not be. The same tool that
-can do the task for you can be pointed at a different job: building the
+That is worth knowing. The same tool that can do the task for you can also be
+pointed at a different job: building the
 exercises, the feedback and the answer key for *you* to do the task, pitched at
 what you already know.
 
