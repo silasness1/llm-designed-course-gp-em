@@ -1,0 +1,17 @@
+# This file only configures pytest; the project is not an installable package.
+[tool.pytest.ini_options]
+# Where pytest looks for tests when run with no arguments:
+# tests/ holds the tests you write, checks/ holds the provided grader.
+testpaths = ["tests", "checks"]
+# Put the project root on the import path so tests can `import gp_em`.
+pythonpath = ["."]
+# Custom markers must be declared here, otherwise pytest warns about typos.
+markers = [
+    "part6: checks for worksheet Part 6 (naive implementation)",
+    "part7: checks for worksheet Part 7 (stable implementation)",
+    "part8: checks for worksheet Part 8 (fit_direct and predict)",
+    "slow: tests that take noticeably longer; skip with -m 'not slow'",
+]
+# Turn an unexpectedly passing xfail test into a failure, so a "known bug"
+# marker cannot silently go stale.
+xfail_strict = true
